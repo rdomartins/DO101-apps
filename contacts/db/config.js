@@ -1,5 +1,5 @@
 require('dotenv').config();
-const DB_CONFIG = process.env.DB_CONFIG || 'postgresql://contacts:contacts@172.30.106.109:5432/contacts';
+const DB_CONFIG = process.env.DB_CONFIG || 'postgresql://contacts:contacts@localhost:5432/contacts';
 const { Pool } = require('pg');
 
 const pgconn = new Pool({
